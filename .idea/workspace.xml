@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82c3b129-804e-4623-8cf1-4f7fbbe04997" name="Changes" comment="ád">
-      <change afterPath="$PROJECT_DIR$/src/utils/search_utils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/AllProduct/AllProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/AllProduct/AllProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/Cart/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/Cart/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/DetailProduct/DetailProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/DetailProduct/DetailProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/MyAccount/MyAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/MyAccount/MyAccount.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +95,7 @@
       <workItem from="1648802529203" duration="319000" />
       <workItem from="1648820522158" duration="2624000" />
       <workItem from="1648864416614" duration="317000" />
-      <workItem from="1648918814753" duration="3196000" />
+      <workItem from="1648918814753" duration="3847000" />
     </task>
     <task id="LOCAL-00001" summary="ád">
       <created>1647709206867</created>
@@ -117,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648701097445</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ád">
+      <created>1648922044658</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648922044658</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
