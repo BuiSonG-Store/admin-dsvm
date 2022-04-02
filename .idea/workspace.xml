@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="82c3b129-804e-4623-8cf1-4f7fbbe04997" name="Changes" comment="ád" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="26JfISKogvK9ffJHcDR5N2ByoO1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../admin" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DacSanVungMienVN\client\public\assets\images\inner-banner" />
+      <recent name="D:\DacSanVungMienVN\client\public\assets\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DacSanVungMienVN\client\public\assets\images\inner-banner" />
+      <recent name="D:\DacSanVungMienVN\client\public\assets\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82c3b129-804e-4623-8cf1-4f7fbbe04997" name="Changes" comment="" />
+      <created>1647146533297</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647146533297</updated>
+      <workItem from="1647146535639" duration="1560000" />
+      <workItem from="1647253797710" duration="1222000" />
+      <workItem from="1647417489118" duration="1153000" />
+      <workItem from="1647527343039" duration="1305000" />
+      <workItem from="1647663369793" duration="14654000" />
+      <workItem from="1647915592907" duration="764000" />
+      <workItem from="1647936353981" duration="1263000" />
+      <workItem from="1648000972507" duration="65000" />
+      <workItem from="1648041029790" duration="938000" />
+      <workItem from="1648048062238" duration="4504000" />
+      <workItem from="1648088727235" duration="1743000" />
+      <workItem from="1648105194169" duration="55000" />
+      <workItem from="1648402398438" duration="23000" />
+      <workItem from="1648402436402" duration="663000" />
+      <workItem from="1648441770032" duration="163000" />
+      <workItem from="1648444693210" duration="586000" />
+      <workItem from="1648448334879" duration="28000" />
+      <workItem from="1648448422342" duration="29000" />
+      <workItem from="1648448888707" duration="1242000" />
+      <workItem from="1648456301562" duration="3159000" />
+      <workItem from="1648517804921" duration="20000" />
+      <workItem from="1648521899138" duration="3021000" />
+      <workItem from="1648556369207" duration="13795000" />
+      <workItem from="1648690438677" duration="60000" />
+      <workItem from="1648692961924" duration="3174000" />
+      <workItem from="1648696178106" duration="1028000" />
+      <workItem from="1648697808194" duration="8000" />
+      <workItem from="1648699073453" duration="2046000" />
+      <workItem from="1648702076822" duration="2157000" />
+      <workItem from="1648708443798" duration="1890000" />
+      <workItem from="1648711268936" duration="734000" />
+      <workItem from="1648712042273" duration="27000" />
+      <workItem from="1648714342454" duration="42000" />
+      <workItem from="1648718361906" duration="3145000" />
+      <workItem from="1648775345283" duration="9181000" />
+      <workItem from="1648802529203" duration="319000" />
+      <workItem from="1648820522158" duration="2624000" />
+    </task>
+    <task id="LOCAL-00001" summary="ád">
+      <created>1647709206867</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647709206867</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ád">
+      <created>1648701097445</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648701097445</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="800b7afd-a808-4b0f-aecf-86ad31fc720a">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="800b7afd-a808-4b0f-aecf-86ad31fc720a" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="ád" />
+    <option name="LAST_COMMIT_MESSAGE" value="ád" />
+  </component>
+</project>
