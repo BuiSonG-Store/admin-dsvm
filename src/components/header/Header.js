@@ -17,7 +17,7 @@ function Header() {
   useEffect(()=>{
     setUser(getSessionStorage().name);
   },[getSessionStorage().name])
-  console.log(users);
+
   return (
     <div className="navbar-area">
       <div className="mobile-nav mean-container">

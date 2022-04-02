@@ -62,10 +62,8 @@ const MyAccount = () => {
         const userEdit = {
             id, name, accountPassword:password, phoneNumber, gmail, userAddress:address,
         };
-        console.log(password);
         try {
             const putUser = await dispatch(editUser(userEdit));
-            console.log(putUser);
             localStorage.removeItem('name');
             localStorage.removeItem('gmail');
             localStorage.removeItem('phoneNumber');

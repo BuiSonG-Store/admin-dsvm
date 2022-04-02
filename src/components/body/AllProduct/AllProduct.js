@@ -80,16 +80,19 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
 
   function applySortFilter(array, comparator, query) {
     const stabilizedThis = array.map((el, index) => [el, index]);
+    const listProducts = array.filter(item => item.product.name !== undefined);
     stabilizedThis.sort((a, b) => {
+
       const order = comparator(a[0], b[0]);
+
       if (order !== 0) {
         return order;
       }
       return a[1] - b[1];
     });
     if (query) {
-      return filter(array, (item) => {
-        return search?item.product.name===query:item.product.regionId === query
+      return filter(listProducts, (item) => {
+        return item?.product?.name?.toLowerCase().indexOf(query.toLowerCase()) !== -1
       });
     }
     return stabilizedThis.map((el) => el[0]);
@@ -150,7 +153,6 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
   };
 
   const handleChangeRowsPerPage = (event) => {
-    console.log(parseInt(event.target.value, 10));
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   };

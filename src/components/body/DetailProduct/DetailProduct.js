@@ -70,7 +70,6 @@ const DetailProduct = ({ match }) => {
 
   const handleAddToCart = () => {
     const id = +match.params.id;
-    console.log(id);
     let price = 0;
     if (product.product.priceSale > 0) {
       price = product.product.priceSale;
@@ -78,11 +77,8 @@ const DetailProduct = ({ match }) => {
       price = product.product.price;
     }
     const cartItems = getCartItems();
-    console.log(cartItems);
     let indexItemInCart = cartItems.findIndex((item) => item.id === id);
-    console.log(indexItemInCart);
     if (indexItemInCart > -1) {
-      console.log("yes");
       cartItems.splice(indexItemInCart, 1, {
         id,
         amount: cartItems[indexItemInCart].amount + 1,
@@ -105,7 +101,6 @@ const DetailProduct = ({ match }) => {
     removeCartItems();
     setCartItems(cartItems);
   };
-  console.log(product);
   return (
     <>
       <ToastContainer

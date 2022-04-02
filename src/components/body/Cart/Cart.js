@@ -57,7 +57,7 @@ const Cart = () => {
   const removeItemCart = (index) => {
     const data = cart;
     data.splice(index, 1);
-    console.log(data);
+
     removeCartItems();
     setCartItems(data);
     getData();
@@ -120,7 +120,7 @@ const Cart = () => {
     fetchUser();
   }, [gmail]);
 
-  console.log(user);
+
   useEffect(() => {
     if(user.name){
       setAddress(user.userAddress.split(' - ')[0]);
@@ -189,7 +189,6 @@ const [checkValidity, setCheckValidity] = useState(true);
     if(phoneNumber.length !== 10){
       return toast.error('Số điện thoại bắt buộc chứa 10 ký tự')
     }
-    console.log(user)
     const billData = {
       total: subTotal,
       orderTime: new Date(),
