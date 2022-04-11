@@ -87,7 +87,7 @@ const RelatedProduct = ({regionId, id, getToTalCart}) => {
                         {product &&
                         product.length > 0 &&
                         product.filter(item => item.product.regionId === regionId).map((item, index) => {
-                            return index < 8 && (
+                            return index < 12 && (
                                 <>
                                     <div className="col-lg-3 col-sm-6">
                                         <div className="product-item">

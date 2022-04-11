@@ -6957,12 +6957,8 @@ a.logo img{
 #mui-2,#mui-2+div,#mui-2+div+p{
   display: none !important;
 }
-#mui-2+div+p+div{
-  width: 98%;
-  display: flex;
-  justify-content: space-around;
-}
 #mui-2+div+p+div button{
+  margin-left: 10px;
   color:green;
   border: 0.5px solid ;
 }

@@ -43,7 +43,7 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
   const [regions, setRegions] = useState([]);
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(0);
-  const [rowsPerPage, setRowsPerPage] = useState(8);
+  const [rowsPerPage, setRowsPerPage] = useState(16);
   const [order] = useState("asc");
   const [orderBy] = useState("name");
   const [filterName, setFilterName] = useState("");
@@ -71,7 +71,6 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
       const resRegion = await dispatch(getRegions());
       unwrapResult(resRegion);
       setRegions(resRegion.payload["$values"]);
-
       setProducts(res.payload);
       unwrapResult(res);
     } catch (e) {
@@ -181,8 +180,6 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
         draggable
         pauseOnHover
       />
-      {/* Same as */}
-
       <div>
         <div className="inner-banner-area">
           <div className="container">
@@ -307,7 +304,6 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
                                       {item.product.dvt} / {item.product.weight}{" "}
                                     </>
                                 )}
-
                             </span>
                           </div>
                         </div>
@@ -321,16 +317,18 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
                   <h2 >Oh! Không tìm thấy sản phẩm nào...</h2>
                 </center>
               )}
-              <div className="col-lg-12 col-md-12 text-center">
-                <TablePagination
-                  rowsPerPageOptions={[20, 36, 44]}
-                  component="div"
-                  count={products.length}
-                  rowsPerPage={rowsPerPage}
-                  page={page}
-                  onPageChange={handleChangePage}
-                  onRowsPerPageChange={handleChangeRowsPerPage}
-                />
+              <div className="col-lg-12 col-md-12 text-end">
+                <a href="#">
+                  <TablePagination
+                      rowsPerPageOptions={[20, 36, 44]}
+                      component="div"
+                      count={products.length}
+                      rowsPerPage={rowsPerPage}
+                      page={page}
+                      onPageChange={handleChangePage}
+                      onRowsPerPageChange={handleChangeRowsPerPage}
+                  />
+                </a>
               </div>
             </div>
           </div>

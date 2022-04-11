@@ -7,17 +7,22 @@ import {
   removeCartItems,
   setCartItems,
 } from "../../../utils/storeSession";
-import { toast, ToastContainer } from "react-toastify";
+import { toast, } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {
-  getAllProduct,
   getToTalCart,
 } from "../../../redux/actions/productAction";
 const PopularProduct = () => {
   const [products, setProducts] = useState([]);
   const [isAdd, setIsAdd] = useState(0);
+
+  useEffect(() => {
+    getToTalCart(getCartItems());
+  }, [isAdd]);
+
   useEffect(() => {
     getProduct();
+
   }, []);
 
   const getProduct = async () => {
@@ -25,8 +30,6 @@ const PopularProduct = () => {
       let res = await axios.get(process.env.REACT_APP_HOST +"/api/Products");
       if (res && res.data) {
         const products=res.data.$values.filter(value => value.product?.name);
-        // let popularProductNumber;
-        // if(products.length<10)
         let top8product=[];
         while (top8product.length<8) {
           const random=Math.floor(Math.random()*products.length);
@@ -89,7 +92,6 @@ const PopularProduct = () => {
     removeCartItems();
     setCartItems(cartItems);
   };
-
   return (
     <div className="list-item-area pb-70">
       <div className="container ctn-mb">
