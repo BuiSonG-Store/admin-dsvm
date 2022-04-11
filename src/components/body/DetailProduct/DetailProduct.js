@@ -18,6 +18,7 @@ import Loading from "../../utils/Loading/Loading";
 import RelatedProduct from "./RelatedProduct";
 import { getRegionById } from "../../../redux/reducers/region";
 import { getProvinceById } from "../../../redux/reducers/province";
+import {Link} from "react-router-dom";
 
 const DetailProduct = ({ match }) => {
   const [regions, setRegions] = useState([]);
@@ -64,6 +65,7 @@ const DetailProduct = ({ match }) => {
       });
   };
 
+  console.log(product)
   useEffect(() => {
     getDetailProduct();
   }, [match.params.id]);
@@ -125,7 +127,9 @@ const DetailProduct = ({ match }) => {
                   <h2>Chi tiết sản phẩm</h2>
                   <ul>
                     <li>
-                      <a href="index.html">Trang chủ</a>
+                      <Link to="/">
+                        <a href="">Trang chủ</a>
+                      </Link>
                     </li>
                     <li>Chi tiết sản phẩm</li>
                   </ul>
@@ -231,7 +235,7 @@ const DetailProduct = ({ match }) => {
         </div>
       </div>
       <RelatedProduct
-        categoryId={product && product.product.categoryId}
+        regionId={product && product.product.regionId}
         id={match.params.id}
       />
     </>

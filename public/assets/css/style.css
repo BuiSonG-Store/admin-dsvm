@@ -1590,7 +1590,6 @@ img {
 }
 .inner-img{
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 .banner-img-2 {
   padding-top: 100px;
@@ -4257,7 +4256,6 @@ img {
 .cart-wraps-area .cart-table table thead tr th {
   border-bottom-width: 0;
   vertical-align: middle;
-  padding: 0 0 15px;
   text-transform: uppercase;
   border: none;
   font-weight: 700;
@@ -4866,7 +4864,7 @@ img {
   z-index: 1;
   background-color: #eaf7f7;
   overflow: hidden;
-  padding: 120px 30px;
+  padding:110px 30px;
   margin-bottom: 30px;
 }
 .offer-style-item::before {
@@ -4911,13 +4909,13 @@ img {
   position: absolute;
   top: 10px;
   right: 0;
-  max-width: 430px;
+  max-width: 300px;
 }
 .offer-style-item-2 {
   position: relative;
   z-index: 1;
   background-color: #f3f0f8;
-  padding: 60px 30px 20px;
+  padding: 30px;
   margin-bottom: 30px;
 }
 .offer-style-item-2::before {
@@ -4958,7 +4956,7 @@ img {
 }
 .offer-style-item-3 {
   background-color: #f8efde;
-  padding: 65px 30px;
+  padding: 34px;
   margin-bottom: 30px;
 }
 .offer-style-item-3 .line {

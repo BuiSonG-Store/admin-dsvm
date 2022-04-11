@@ -3,7 +3,7 @@ import { unwrapResult } from "@reduxjs/toolkit";
 import { filter } from "lodash";
 import React, { useEffect, useState } from "react";
 import { connect, useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import {Link,} from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {
@@ -21,6 +21,7 @@ import { fCurrency } from "../../utils/FormatCost";
 import Loading from "../../utils/Loading/Loading";
 
 function descendingComparator(a, b, orderBy) {
+
   if (b[orderBy] < a[orderBy]) {
     return -1;
   }
@@ -80,19 +81,18 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
 
   function applySortFilter(array, comparator, query) {
     const stabilizedThis = array.map((el, index) => [el, index]);
-    const listProducts = array.filter(item => item.product.name !== undefined);
     stabilizedThis.sort((a, b) => {
-
       const order = comparator(a[0], b[0]);
-
       if (order !== 0) {
         return order;
       }
       return a[1] - b[1];
     });
     if (query) {
-      return filter(listProducts, (item) => {
-        return item?.product?.name?.toLowerCase().indexOf(query.toLowerCase()) !== -1
+      return filter(array, (item) => {
+        if (item.product.name){
+          return search !== '' ?item.product.name.toLowerCase().indexOf(query.toLowerCase()) !== -1:item.product.regionId === query
+        }
       });
     }
     return stabilizedThis.map((el) => el[0]);
@@ -192,7 +192,9 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
                   <h2>Sản phẩm</h2>
                   <ul>
                     <li>
-                      <a href="index.html">Trang chủ</a>
+                      <Link to="/">
+                        <a href="">Trang chủ</a>
+                      </Link>
                     </li>
                     <li>Sản phẩm</li>
                   </ul>
@@ -201,7 +203,7 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
               <div className="col-lg-7 col-md-7">
                 <div className="inner-img">
                   <img
-                    src="assets/images/inner-banner/h_dsvm2.png"
+                    src="assets/images/offer-img/png4.png"
                     alt="Images"
                   />
                 </div>

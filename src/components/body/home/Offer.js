@@ -15,7 +15,7 @@ const Offer = () => {
               <span>Giảm giá tới 35%</span>
               <h3>Đặc sản vùng miền Việt Nam</h3>
               <Link to="/products" className="shop-btn">Khám phá ngay</Link>
-              <img src="assets/images/offer-img/offer-style-1.png" alt="Images" />
+              <img src="assets/images/offer-img/png3.png" alt="Images" />
             </div>
           </div>
           <div className="col-lg-5">
@@ -23,12 +23,12 @@ const Offer = () => {
               <div className="line" />
               <h3>Đặc sản toàn quốc</h3>
               <Link to="/products" className="shop-btn">Khám phá ngay</Link>
-              <img src="assets/images/offer-img/offer-style-2.png" alt="Images" />
+              <img src="assets/images/offer-img/png1.png" alt="Images" />
             </div>
           </div>
           <div className="col-lg-7">
             <div className="offer-style-item-3">
-              <img src="assets/images/offer-img/offer-style-3.png" alt="Images" />
+              <img src="assets/images/offer-img/png2.png" alt="Images" />
               <div className="line" />
               <h3>Đặc sản chất lượng</h3>
               <Link to="/products" className="shop-btn">Khám phá ngay</Link>
@@ -41,7 +41,7 @@ const Offer = () => {
           <div className="line" />
           <h3>Trải khắp 63 tỉnh thành</h3>
           <Link to="/products" className="shop-btn">Mua ngay</Link>
-          <img src="assets/images/offer-img/offer-style-4.png" alt="Images" />
+          <img src="assets/images/offer-img/bandovn.png" alt="Images" />
         </div>
       </div>
     </div>

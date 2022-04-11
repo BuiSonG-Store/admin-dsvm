@@ -69,7 +69,11 @@ function Login() {
           <div className="inner-content">
             <h2> Đăng nhập</h2>
             <ul>
-              <li><a href="index.html">Trang chủ</a></li>
+              <li>
+                  <Link to="/">
+                      <a href="">Trang chủ</a>
+                  </Link>
+              </li>
               <li> Đăng nhập</li>
             </ul>
           </div>

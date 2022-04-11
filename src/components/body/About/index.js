@@ -1,5 +1,6 @@
 import React from 'react'
 import Loading from '../../utils/Loading/Loading'
+import {Link} from "react-router-dom";
 
 
 const About = () => {
@@ -14,7 +15,11 @@ const About = () => {
                                 <div className="inner-content">
                                     <h2>Thông tin</h2>
                                     <ul>
-                                        <li><a href="/">Trang chủ</a></li>
+                                        <li>
+                                            <Link to="/">
+                                                <a href="">Trang chủ</a>
+                                            </Link>
+                                        </li>
                                         <li>Thông tin</li>
                                     </ul>
                                 </div>
@@ -47,10 +52,10 @@ const About = () => {
                                             điều kiện sống...
                                         </p>
                                         <p>
-                                            Chúng tôi chỉ dừng lại ở đó, đồng bào còn gặp khó khăn chúng tôi sẽ trích
-                                            một phần doanh số bán được để giúp đỡ bà con còn khó khăn bằng những hoạt
-                                            động như xây cầu đường, trường trạm,... các bạn cũng góp một phần nhỏ khi
-                                            mua sản phẩm của chúng tôi đấy, cảm ơn các bạn!
+                                            Không chỉ dừng lại ở đó, chúng tôi sẽ trích một phần doanh số bán được để
+                                            giúp đỡ đồng bào, bà con còn khó khăn bằng
+                                            những hoạt động thiết thực như xây cầu đường, trường trạm,... các bạn cũng
+                                            góp một phần nhỏ khi mua sản phẩm của chúng tôi đấy, cảm ơn các bạn!
                                         </p>
                                     </div>
                                 </div>

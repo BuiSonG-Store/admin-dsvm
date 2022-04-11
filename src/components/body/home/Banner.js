@@ -9,7 +9,7 @@ const Banner = () => {
       <div className="col-lg-5">
         <div className="banner-content-2">
           <h2>Sứ mệnh của chúng tôi</h2>
-          <p>Mỗi sản phẩm các bạn mua Đặc Sản Vùng Miền Việt Nam chúng tôi đều trích 1 phần vào quỹ từ thiện xây cầu, làm trường học cho đồng bào ở vùng xa khó khăn</p>
+          <p>Chúng tôi đem tất cả đặc sản của 63 Tỉnh/Thành đến với người dân Việt Nam thưởng thức, với những sản phẩm chất lượng tốt nhất, ngon bổ và đẹp với giá cả phù hợp.</p>
           <Link to="/products" className="default-btn btn-bg-three border-radius-5">Mua ngay</Link>
         </div>
       </div>

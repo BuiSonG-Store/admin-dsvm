@@ -1,5 +1,6 @@
 import React from 'react'
 import Loading from '../../utils/Loading/Loading'
+import {Link} from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -13,7 +14,11 @@ const Contact = () => {
           <div className="inner-content">
             <h2>Liên hệ chúng tôi</h2>
             <ul>
-              <li><a href="index.html">Trang chủ</a></li>
+              <li>
+                <Link to="/">
+                  <a href="">Trang chủ</a>
+                </Link>
+              </li>
               <li>Liên hệ chúng tôi</li>
             </ul>
           </div>
@@ -137,7 +142,7 @@ const Contact = () => {
             <p>CH1: Số 37 Ngõ 109 Đường Trường Chinh, Phương Liệt, Thanh Xuân, Hà Nội</p>
             <p>CH2: 143 Đ. Trần Đăng Ninh, Hoàng Văn Thụ, Thành phố Lạng Sơn, Lạng Sơn</p>
             <p>CH3: Tổ 4 phường Đức Sơn, TP.Bắc Kạn</p>
-            <p>CH4: Đ.Nội Thị 2, Tiên Lữ, Hưng Yên</p>
+            <p>CH4: Đường nội thị 2 (cổng chợ chiều) Thị trấn Vương, Tiên Lữ, Hưng Yên </p>
             <p>CH5: Số 192 Phan Đình Phùng, TP Thái Nguyên </p>
           </div>
         </div>

@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import {Link, NavLink, useHistory} from "react-router-dom";
 import Cart from "./Cart";
 import {getSessionStorage} from '../../utils/sessionStorage';
 
 function Header() {
+  const history = useHistory();
+
   const handleLogout = async () => {
       localStorage.clear();
-      window.location.href = "/";
+    history.push('/');
   };
   const [open, setOpen] = useState(false);
   const [users,setUser] = useState();
@@ -55,7 +57,7 @@ function Header() {
                   to="/products"
                   className="nav-link"
                 >
-                  Sản phẩm
+                  Tìm sản phẩm
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -99,9 +101,7 @@ function Header() {
             </div>
           </nav>
         </div>
-        <a href="index.html" className="logo">
-          <img src="assets/images/logos/logo-1.png" alt="Logo" />
-        </a>
+
       </div>
 
       <div className="mobile-nav">
@@ -129,7 +129,7 @@ function Header() {
                 to="/products"
                 className="nav-link"
               >
-                Sản phẩm
+                Tìm sản phẩm
               </NavLink>
             </li>
             <li className="nav-item">
@@ -223,7 +223,7 @@ function Header() {
                     to="/products"
                     className="nav-link"
                   >
-                    Sản phẩm
+                    Tìm sản phẩm
                   </NavLink>
                 </li>
                 <li className="nav-item">

@@ -9,8 +9,11 @@ import Loading from '../../utils/Loading/Loading';
 import {toast, ToastContainer} from 'react-toastify';
 import {getCartItems} from '../../../utils/storeSession';
 import {fCurrency} from '../../utils/FormatCost';
+import {useHistory} from "react-router-dom";
 
 const MyAccount = () => {
+    const history = useHistory();
+
     const [showOrder, setShowOrder] = useState(true);
     const [name, setName] = useState('');
     const [gmail, setGmail] = useState('');
@@ -19,7 +22,6 @@ const MyAccount = () => {
     const [address, setAddress] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
     const [subTotal, setSubTotal] = useState(0);
-    const [ship] = useState(30);
     const [cart,setCart]=useState([]);
     useEffect(() => {
         const user = getSessionStorage();
@@ -42,7 +44,7 @@ const MyAccount = () => {
     const handleLogout = async () => {
             localStorage.clear();
             removeUser();
-            window.location.href = "/login";
+        history.push('/login');
 
     };
 
@@ -71,7 +73,7 @@ const MyAccount = () => {
             localStorage.setItem('gmail', putUser.payload.gmail)
             localStorage.setItem('phoneNumber', putUser.payload.phoneNumber)
             setSessionStorage(putUser.payload);
-            window.location.href='/my_account';
+            history.push('/login');
             unwrapResult(putUser);
         } catch (e) {
             console.log(e);
@@ -125,8 +127,8 @@ const MyAccount = () => {
                                     {showOrder ? <div className="tabs_item">
                                         <div className="account-tab-item">
                                             <div className="checkout-order">
-                                                <h2>My Orders</h2>
-                                                <h3 className="title-item">Item Description & Amount <span>Cash</span>
+                                                <h2>Giỏ hàng của tôi</h2>
+                                                <h3 className="title-item">Mô tả & Số tiền<span>Tổng tiền</span>
                                                 </h3>
                                                 <ul className="checkout-product">
                                                     {cart.map((item,index)=>{
@@ -143,11 +145,11 @@ const MyAccount = () => {
                                                 </ul>
                                                 <div className="total-amount">
 
-                                                    <h3 className="vat-title">Ship <span>{ship}</span></h3>
-                                                    <h3 className="total-title">Total Amount<span>{fCurrency((subTotal + ship))}</span></h3>
+                                                    <h3 className="vat-title">Ship <span>chưa xác định</span></h3>
+                                                    <h3 className="total-title">Tổng cộng<span>{fCurrency((subTotal))}</span></h3>
                                                 </div>
                                                 <div className="amount-btn">
-                                                    <a href="#" onClick={()=>window.location.href='/cart'} className="default-btn btn-bg-three">Next</a>
+                                                    <a href="#" onClick={()=>history.push('/cart')} className="default-btn btn-bg-three">Tiếp tục</a>
                                                 </div>
                                             </div>
                                         </div>

@@ -31,7 +31,7 @@ const Footer = () => {
                     <li>
                       <i className="bx bx-home" />
                       <a href="#">
-                        Tổng kho : Lô A52 khu 3ha Ngõ 36 Đức Diễn, P. Phúc Diễn, Q. Bắc Từ Liêm, Hà Nội
+                        Tổng kho : Lô A52 khu 3ha Ngõ 36 Đức Diễn, P. Phúc Diễn, Q. Bắc Từ Liêm, Hà
                       </a>
                     </li>
                     <li>
@@ -40,12 +40,12 @@ const Footer = () => {
                     </li>
                     <li>
                       <i className="bx bx-envelope" />
-                      <a type="email" href="mailto:dacsanso1vn@gmail.com">
+                      <a type="email" href="mailto:dacsanso1vietnam@gmail.com">
                         <span
                           className="__cf_email__"
                           data-cfemail="1078757c7c7f5078797c7f3e737f7d"
                         >
-                          dacsanso1vn@gmail.com
+                          dacsanso1vietnam@gmail.com
                         </span>
                       </a>
                     </li>
@@ -100,7 +100,6 @@ const Footer = () => {
                         </a>
                       </Link>
                     </li>
-
                   </ul>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import {Link,} from 'react-router-dom';
+import {Link, useHistory,} from 'react-router-dom';
 import axios from "axios";
 import {
   getCartItems, getSessionStorage,
@@ -15,6 +15,7 @@ import {unwrapResult} from '@reduxjs/toolkit';
 import {editUser} from '../../../redux/reducers/user';
 import {setSessionStorage} from '../../../utils/sessionStorage';
 const Cart = () => {
+  const history = useHistory();
   const [cart, setCart] = useState([]);
   const [subTotal, setSubTotal] = useState(0);
   const [amount, setAmount] = useState([]);
@@ -185,7 +186,6 @@ const Cart = () => {
 const [checkValidity, setCheckValidity] = useState(true);
 
   const handleSubmitForm = async () => {
-
     if(phoneNumber.length !== 10){
       return toast.error('Số điện thoại bắt buộc chứa 10 ký tự')
     }
@@ -225,7 +225,7 @@ const [checkValidity, setCheckValidity] = useState(true);
 
             removeCartItems();
             getData();
-            window.location.href='/products';
+            setIsOrder(false);
             toast.success('Đặt hàng thành công')
         } catch (e) {
             console.log(e);
@@ -327,7 +327,9 @@ const [checkValidity, setCheckValidity] = useState(true);
                   <h2>Giỏ hàng</h2>
                   <ul>
                     <li>
-                      <a href="index.html">Trang chủ</a>
+                      <Link to="/">
+                        <a href="">Trang chủ</a>
+                      </Link>
                     </li>
                     <li>Giỏ hàng</li>
                   </ul>
@@ -452,7 +454,7 @@ const [checkValidity, setCheckValidity] = useState(true);
                   </div>
                   <div className="row">
                     <div className="col-lg-6">
-                     {cart && cart.length > 0 && 
+                     {cart && cart.length > 0 &&
                      <>
                       <div className="cart-totals">
                         <h3>Tổng số giỏ hàng</h3>
@@ -477,7 +479,7 @@ const [checkValidity, setCheckValidity] = useState(true);
                           className="default-btn btn-bg-three"
                           onClick={()=>{
                             setIsOrder(true);
-                            if (getSessionStorage().name===null) return window.location.href='/login';
+                            if (getSessionStorage().name===null) return history.push('/login');
                           }}
                         >
                           Đặt hàng
@@ -575,7 +577,9 @@ const [checkValidity, setCheckValidity] = useState(true);
                 </div>
               </div>
               <div className="modal-footer">
-                <button onClick={handleSubmitForm} type="button" className="default-btn btn-bg-three">
+                <button onClick={handleSubmitForm} type="button" className="default-btn btn-bg-three"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
                   Gửi thông tin
                 </button>
               </div>
