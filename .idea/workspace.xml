@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82c3b129-804e-4623-8cf1-4f7fbbe04997" name="Changes" comment="ád">
+      <change afterPath="$PROJECT_DIR$/public/404.shtml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/seo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/AllProduct/AllProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/AllProduct/AllProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/DetailProduct/RelatedProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/DetailProduct/RelatedProduct.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/body/home/PopularProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/home/PopularProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/choose-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/newsletter-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/body/Contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/Contact/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utils/NotFound/NotFound.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,19 +43,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/images" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DacSanVungMienVN\client\public\assets\images" />
       <recent name="D:\DacSanVungMienVN\client\public\assets\images\offer-img" />
       <recent name="D:\DacSanVungMienVN\client\public\assets\images\latest-product" />
       <recent name="D:\DacSanVungMienVN\client\public\assets\images\inner-banner" />
-      <recent name="D:\DacSanVungMienVN\client\public\assets\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DacSanVungMienVN\client" />
       <recent name="D:\DacSanVungMienVN\client\public\assets\images\offer-img" />
       <recent name="D:\DacSanVungMienVN\client\public\assets\images\inner-banner" />
       <recent name="D:\DacSanVungMienVN\client\public\assets\images" />
@@ -121,7 +127,15 @@
       <workItem from="1649481689580" duration="2490000" />
       <workItem from="1649486159503" duration="6472000" />
       <workItem from="1649563224969" duration="1066000" />
-      <workItem from="1649643235598" duration="3236000" />
+      <workItem from="1649643235598" duration="3266000" />
+      <workItem from="1649677537834" duration="1845000" />
+      <workItem from="1649910329736" duration="27000" />
+      <workItem from="1649910876214" duration="675000" />
+      <workItem from="1649912375734" duration="3299000" />
+      <workItem from="1649924281728" duration="852000" />
+      <workItem from="1649991835337" duration="3778000" />
+      <workItem from="1650020898390" duration="2232000" />
+      <workItem from="1650026291277" duration="2156000" />
     </task>
     <task id="LOCAL-00001" summary="ád">
       <created>1647709206867</created>
@@ -158,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649643289287</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ád">
+      <created>1649677063668</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649677063668</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
