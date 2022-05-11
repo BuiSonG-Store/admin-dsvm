@@ -12,7 +12,7 @@ const Loading = () => {
    {load && <div className="preloader">
   <div className="d-table">
     <div className="d-table-cell">
-      <img  src="../assets/images/preloder-img.png" alt="Images" />
+      <img  src="../assets/images/logos/logo-2.png" alt="Images" />
       <h4>Đặc Sản Vùng Miền Số 1 Việt Nam</h4>
     </div>
   </div>

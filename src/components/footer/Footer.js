@@ -30,8 +30,8 @@ const Footer = () => {
                   <ul className="footer-list-contact">
                     <li>
                       <i className="bx bx-home" />
-                      <a href="#">
-                        Tổng kho : Lô A52 khu 3ha Ngõ 36 Đức Diễn, P. Phúc Diễn, Q. Bắc Từ Liêm, Hà
+                      <a href="https://goo.gl/maps/hxkXnUNj6QiXhcqK8">
+                        Tổng kho : Lô A52 khu 3ha Ngõ 36 Đức Diễn, P. Phúc Diễn, Q. Bắc Từ Liêm, Hà Nội
                       </a>
                     </li>
                     <li>

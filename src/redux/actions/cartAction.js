@@ -1,14 +1,4 @@
 import ACTIONS from './index'
-import axios from 'axios'
-import {
-  getCartItems,
-  removeCartItems,
-  setCartItems,
-} from "../../utils/storeSession";
-
-
-
-
 
 export const getTotalCart = (total) => async (dispatch) => {
   try {

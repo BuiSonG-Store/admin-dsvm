@@ -61,7 +61,11 @@ const Contact = () => {
                                 <div className="contact-card">
                                     <i className="bx bxs-map"/>
                                     <h3>Địa chỉ</h3>
-                                    <span>Lô A52 khu 3ha Ngõ 36 Đức Diễn, P. Phúc Diễn, Q. Bắc Từ Liêm, Hà Nội </span>
+                                    <a href="https://goo.gl/maps/hxkXnUNj6QiXhcqK8">
+                                        <span>
+                                            Lô A52 khu 3ha Ngõ 36 Đức Diễn, P. Phúc Diễn, Q. Bắc Từ Liêm, Hà Nội
+                                        </span>
+                                    </a>
                                 </div>
                             </div>
 
@@ -71,12 +75,15 @@ const Contact = () => {
                                 <div className="contact-card">
                                     <i className="bx bxs-map"/>
                                     <h3>Các cửa hàng trên toàn quốc :</h3>
-                                    <p>CH1: Số 37 Ngõ 109 Đường Trường Chinh, Phương Liệt, Thanh Xuân, Hà Nội</p>
+                                    <a href="https://goo.gl/maps/hxkXnUNj6QiXhcqK8">
+                                        <p>CH1: Số 37 Ngõ 109 Đường Trường Chinh, Phương Liệt, Thanh Xuân, Hà Nội</p>
+                                    </a>
                                     <p>CH2: 143 Đ. Trần Đăng Ninh, Hoàng Văn Thụ, Thành phố Lạng Sơn, Lạng Sơn</p>
                                     <p>CH3: Tổ 4 phường Đức Sơn, TP.Bắc Kạn</p>
                                     <p>CH4: Đường nội thị 2 (cổng chợ chiều) Thị trấn Vương, Tiên Lữ, Hưng Yên </p>
-                                    <p>CH5: Số 192 Phan Đình Phùng, TP Thái Nguyên </p>
-                                </div>
+                                    <a href="https://goo.gl/maps/1BadNa6wpq32v9VTA">
+                                        <p>CH5: Số 192 Phan Đình Phùng, TP Thái Nguyên </p>
+                                    </a>                                </div>
                             </div>
                         </div>
                     </div>

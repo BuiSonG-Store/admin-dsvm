@@ -3,7 +3,7 @@ import { unwrapResult } from "@reduxjs/toolkit";
 import { filter } from "lodash";
 import React, { useEffect, useState } from "react";
 import { connect, useDispatch } from "react-redux";
-import {Link,} from "react-router-dom";
+import {Link, NavLink,} from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {
@@ -39,7 +39,7 @@ function getComparator(order, orderBy) {
 
 
 
-const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
+const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
   const [regions, setRegions] = useState([]);
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(0);
@@ -142,7 +142,6 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
     setCartItems(cartItems);
   };
 
-
   const handleFilterByName = (event) => {
     setFilterName(search?event.target.value:+event.target.value);
     setPage(0);
@@ -165,7 +164,7 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
   );
 
   const dataOfPage = filteredProducts
-    .filter((item) => item.product.name !== undefined)
+    .filter((item) => item.product.name !== undefined && item.product.checkHotProduct)
     .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
 
   return (
@@ -185,24 +184,26 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
       <div>
         <div className="inner-banner-area">
           <div className="container">
-            <div className="row align-items-center">
+            <div className="row align-items-center" style={{paddingBottom:30}}>
               <div className="col-lg-5 col-md-5">
                 <div className="inner-content">
-                  <h2>Sản phẩm</h2>
+                  <h2>
+                    Sản phẩm HOT</h2>
                   <ul>
                     <li>
                       <Link to="/">
                         <a href="">Trang chủ</a>
                       </Link>
                     </li>
-                    <li>Sản phẩm</li>
+                    <li>Sản phẩm HOT</li>
                   </ul>
                 </div>
               </div>
               <div className="col-lg-7 col-md-7">
                 <div className="inner-img">
                   <img
-                    src="assets/images/offer-img/png4.png"
+                      style={{maxWidth:450}}
+                    src="assets/images/offer-img/png5.png"
                     alt="Images"
                   />
                 </div>
@@ -216,7 +217,16 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
               <div className="row">
                 <div className="col-lg-4 col-md-4">
                   <div className="product-topper-title">
-                    <h3>Tất cả sản phẩm của chúng tôi</h3>
+                    <h3 className='hot_text'>
+                      <NavLink
+                          activeClassName="active"
+                          to="/hot_product"
+                          className="nav-link"
+                      >
+                        <i class='bx bxs-hot'></i>
+                        Tất cả sản phẩm HOT
+                      </NavLink>
+                    </h3>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4">
@@ -262,6 +272,9 @@ const AllProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
                                 alt="Product Images"
                               />
                             </Link>
+                            <div className="hot-icon">
+                              <img src="assets/images/hot_icon.png" alt=""/>
+                            </div>
                             {item.product.priceSale >0 && (
                               <div className="product-item-tag">
                                 <h3>
@@ -347,4 +360,4 @@ const mapDispatchToProps = {
   getToTalCart,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(AllProduct);
+export default connect(mapStateToProps, mapDispatchToProps)(HotProduct);

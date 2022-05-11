@@ -10,6 +10,9 @@ import Cart from "./Cart/Cart";
 import Contact from "./Contact/";
 import DetailProduct from "./DetailProduct/DetailProduct";
 import MyAccount from './MyAccount/MyAccount';
+import HotProduct from "./Hot/HotProduct";
+import News from "./News/News";
+import NewsDetails from "./News/NewsDetails";
 
 function Body() {
   const auth = useSelector((state) => state.auth);
@@ -23,7 +26,6 @@ function Body() {
   }, []);
   return (
     <>
-
         <Route path="/" component={Home} exact />
         <Route path="/login" component={Login} exact />
         <Route path="/register" component={Register} exact />
@@ -33,7 +35,9 @@ function Body() {
         <Route path="/about" component={About} exact />
         <Route path="/contact" component={Contact} exact />
         <Route path="/my_account" component={MyAccount} exact />
-
+        <Route path="/hot_product" component={HotProduct} exact />
+        <Route path="/news" component={News} exact />
+        <Route path="/news-details" component={NewsDetails} exact />
     </>
   );
 }

@@ -2,21 +2,146 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82c3b129-804e-4623-8cf1-4f7fbbe04997" name="Changes" comment="ád">
-      <change afterPath="$PROJECT_DIR$/public/404.shtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/seo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/SEO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/hot_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/inner-banner/inner-banner10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/offer-img/png5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/body/AllProduct/HotProductBody.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/body/Hot/HotProduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/body/News/News.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/body/News/NewsDetails.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/404.shtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/boxicons.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/meanmenu.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/nice-select.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Flaticon-1.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Flaticon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Flaticon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Flaticon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Flaticon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Flaticon.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/boxicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/boxicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/boxicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/boxicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/boxicons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/fonts/flaticon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/about-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-details-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-img5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-img6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-product1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-product2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-product3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-style-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-style-img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-style-img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/blog/blog-style-img4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/choose-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/contact-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/customer-services.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/found.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/h_dsvm1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/inner-banner/h_dsvm2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/inner-banner/inner-banner1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/inner-banner/inner-banner2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/inner-banner/inner-banner3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/inner-banner/inner-banner4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/inner-banner/inner-banner5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/inner-banner/inner-banner6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/inner-banner/inner-banner7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/inner-banner/inner-banner8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/inner-banner/inner-banner9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/latest-product1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/logos/logo-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/logos/logo-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/logos/logo-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/logos/logo-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/newsletter-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/offer-img/bandovn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/offer-img/banner1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/offer-img/png1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/offer-img/png2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/offer-img/png3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/offer-img/png4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/preloder-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/preloder-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/seo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/images/terms-condition-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/contact-form-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/form-validator.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/jquery-3.5.1.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/jquery-ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/jquery.ajaxchimp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/jquery.nice-select.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/meanmenu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/mixitup.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/js/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/precache-manifest.f8cfb4b642609f961bc086a48799bcc3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/service-worker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/2.d6d9aea6.chunk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/2.d6d9aea6.chunk.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.ce2aa716.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.ce2aa716.chunk.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/2.ce2aa716.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.3bc30653.chunk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.3bc30653.chunk.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.09b85ec0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.09b85ec0.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/slick.b7c9e1e4.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/slick.ced611da.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/slick.d41f55a7.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/slick.f97e3bbf.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/choose-bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/newsletter-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/preloder-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/images/seo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DacSanApp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/body/AllProduct/AllProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/AllProduct/AllProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/Body.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/body/Contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/Contact/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/utils/NotFound/NotFound.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/body/DetailProduct/DetailProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/DetailProduct/DetailProduct.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/body/home/Brand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/body/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/body/home/Offer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/body/home/Offer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utils/Loading/Loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utils/Loading/Loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/cartAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/cartAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/productAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/productAction.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,19 +168,21 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/assets/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\DacSanVungMienVN\client\public\assets\images" />
       <recent name="D:\DacSanVungMienVN\client\public\assets\images\offer-img" />
-      <recent name="D:\DacSanVungMienVN\client\public\assets\images\latest-product" />
+      <recent name="D:\DacSanVungMienVN\client\public\assets\images" />
       <recent name="D:\DacSanVungMienVN\client\public\assets\images\inner-banner" />
+      <recent name="D:\DacSanVungMienVN\client\src\components\body\Hot" />
+      <recent name="D:\DacSanVungMienVN\client\public\assets\images\icon" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DacSanVungMienVN\client\public\assets\images\icon" />
       <recent name="D:\DacSanVungMienVN\client" />
       <recent name="D:\DacSanVungMienVN\client\public\assets\images\offer-img" />
       <recent name="D:\DacSanVungMienVN\client\public\assets\images\inner-banner" />
@@ -135,7 +262,23 @@
       <workItem from="1649924281728" duration="852000" />
       <workItem from="1649991835337" duration="3778000" />
       <workItem from="1650020898390" duration="2232000" />
-      <workItem from="1650026291277" duration="2156000" />
+      <workItem from="1650026291277" duration="4507000" />
+      <workItem from="1650114603962" duration="5492000" />
+      <workItem from="1650206281942" duration="2326000" />
+      <workItem from="1650246835731" duration="2514000" />
+      <workItem from="1650257754363" duration="320000" />
+      <workItem from="1650374165199" duration="315000" />
+      <workItem from="1650374860400" duration="63000" />
+      <workItem from="1650529381232" duration="1432000" />
+      <workItem from="1651058919751" duration="4359000" />
+      <workItem from="1651454977881" duration="14382000" />
+      <workItem from="1651673725017" duration="18000" />
+      <workItem from="1651766622429" duration="3207000" />
+      <workItem from="1651817525637" duration="778000" />
+      <workItem from="1651946125960" duration="7699000" />
+      <workItem from="1651987586414" duration="34000" />
+      <workItem from="1651987638360" duration="1400000" />
+      <workItem from="1651990432887" duration="103000" />
     </task>
     <task id="LOCAL-00001" summary="ád">
       <created>1647709206867</created>
@@ -179,7 +322,21 @@
       <option name="project" value="LOCAL" />
       <updated>1649677063668</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ád">
+      <created>1650030262732</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1650030262732</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ád">
+      <created>1650030313052</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1650030313052</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

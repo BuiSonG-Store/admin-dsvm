@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Offer = () => {
   return (
     <>
-    <div className="offer-style-area pt-100 pb-70">
+    <div className="offer-style-area pb-70">
   <div className="container">
     <div className="row">
       <div className="col-lg-7">

@@ -2,18 +2,18 @@ import React from "react";
 import Banner from "./Banner";
 import Product from "./Product";
 import Loading from "../../utils/Loading/Loading";
-import Brand from "./Brand";
 import Offer from "./Offer";
 import PopularProduct from "./PopularProduct";
 import Choose from "./Choose";
 import Blog from "./Blog";
+import HotProductBody from "../AllProduct/HotProductBody";
 
 function Home() {
   return (
     <>
     <Loading/>
       <Banner />
-      {/*<Brand/>*/}
+      <HotProductBody/>
       <Offer/>
       <PopularProduct/>
       <Choose/>
@@ -74,7 +74,9 @@ function Home() {
               <p>CH2: 143 Đ. Trần Đăng Ninh, Hoàng Văn Thụ, Thành phố Lạng Sơn, Lạng Sơn</p>
               <p>CH3: Tổ 4 phường Đức Sơn, TP.Bắc Kạn</p>
               <p>CH4: Đường nội thị 2 (cổng chợ chiều) Thị trấn Vương, Tiên Lữ, Hưng Yên </p>
-              <p>CH5: Số 192 Phan Đình Phùng, TP Thái Nguyên </p>
+              <a href="https://goo.gl/maps/1BadNa6wpq32v9VTA">
+                <p>CH5: Số 192 Phan Đình Phùng, TP Thái Nguyên </p>
+              </a>
             </div>
           </div>
         </div>

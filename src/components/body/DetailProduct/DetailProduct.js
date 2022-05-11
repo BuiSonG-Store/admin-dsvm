@@ -46,8 +46,7 @@ const DetailProduct = ({ match }) => {
 
   const getDetailProduct = async () => {
 
-    await axios
-      .get(process.env.REACT_APP_HOST +`/api/Products/${match.params.id}`)
+    await axios.get(process.env.REACT_APP_HOST +`/api/Products/${match.params.id}`)
       .then(async(res) => {
         setProduct(res.data);
 
@@ -201,9 +200,8 @@ const DetailProduct = ({ match }) => {
                     </div>
 
                   </div>
-                  <p>Mô tả sản phẩm: </p>
-                  <div className='description'>
-                    {product && product.product.description}
+                  <p className='description-title'>Mô tả sản phẩm: </p>
+                  <div className='description' dangerouslySetInnerHTML={{ __html: product && product.product.description}}>
                   </div>
                   <div className='row row-buy'>
                     <div className="input-count-area col-md-6 col-sm-12 col-12">

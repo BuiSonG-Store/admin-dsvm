@@ -1,19 +1,17 @@
 import React, {useEffect} from 'react';
-import {BrowserRouter as Router} from 'react-router-dom'
+import {HashRouter as Router} from 'react-router-dom'
 import {useDispatch, useSelector} from 'react-redux'
-import {dispatchLogin, fetchUser, dispatchGetUser} from './redux/actions/authAction'
+import {dispatchLogin} from './redux/actions/authAction'
 
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Body from './components/body/Body'
-import axios from 'axios';
 import OnTop from './components/OnTop';
 import ScrollToTop from './ScrollTop';
 
 
 function App() {
   const dispatch = useDispatch()
-  const token = useSelector(state => state.token)
   const auth = useSelector(state => state.auth)
 
   useEffect(() => {
@@ -23,9 +21,6 @@ function App() {
     }
   },[auth.isLogged, dispatch])
 
-
-
-
   return (
     <Router>
         <ScrollToTop/>
@@ -34,7 +29,7 @@ function App() {
         <Body />
         </main>
         <Footer/>
-     <OnTop/>
+        <OnTop/>
     </Router>
   );
 }
