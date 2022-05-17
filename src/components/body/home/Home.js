@@ -77,6 +77,7 @@ function Home() {
               <a href="https://goo.gl/maps/1BadNa6wpq32v9VTA">
                 <p>CH5: Số 192 Phan Đình Phùng, TP Thái Nguyên </p>
               </a>
+              <p>CH6: Kiot 16 Toà Nam, Rice City Linh Đàm, Hoàng Liệt, Hoàng Mai, HN </p>
             </div>
           </div>
         </div>

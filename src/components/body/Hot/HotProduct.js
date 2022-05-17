@@ -1,9 +1,9 @@
-  import { TablePagination } from "@mui/material";
+import { TablePagination } from "@mui/material";
 import { unwrapResult } from "@reduxjs/toolkit";
 import { filter } from "lodash";
 import React, { useEffect, useState } from "react";
 import { connect, useDispatch } from "react-redux";
-import {Link, NavLink,} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {
@@ -21,7 +21,6 @@ import { fCurrency } from "../../utils/FormatCost";
 import Loading from "../../utils/Loading/Loading";
 
 function descendingComparator(a, b, orderBy) {
-
   if (b[orderBy] < a[orderBy]) {
     return -1;
   }
@@ -37,8 +36,6 @@ function getComparator(order, orderBy) {
     : (a, b) => -descendingComparator(a, b, orderBy);
 }
 
-
-
 const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
   const [regions, setRegions] = useState([]);
   const [total, setTotal] = useState(0);
@@ -49,7 +46,7 @@ const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
   const [filterName, setFilterName] = useState("");
   const [products, setProducts] = useState([]);
   const [isAdd, setIsAdd] = useState(0);
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
 
   const dispatch = useDispatch();
 
@@ -89,8 +86,11 @@ const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
     });
     if (query) {
       return filter(array, (item) => {
-        if (item.product.name){
-          return search !== '' ?item.product.name.toLowerCase().indexOf(query.toLowerCase()) !== -1:item.product.regionId === query
+        if (item.product.name) {
+          return search !== ""
+            ? item.product.name.toLowerCase().indexOf(query.toLowerCase()) !==
+                -1
+            : item.product.regionId === query;
         }
       });
     }
@@ -143,12 +143,12 @@ const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
   };
 
   const handleFilterByName = (event) => {
-    setFilterName(search?event.target.value:+event.target.value);
+    setFilterName(search ? event.target.value : +event.target.value);
     setPage(0);
   };
 
   const handleChangePage = (event, newPage) => {
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0);
     setPage(newPage);
   };
 
@@ -164,7 +164,9 @@ const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
   );
 
   const dataOfPage = filteredProducts
-    .filter((item) => item.product.name !== undefined && item.product.checkHotProduct)
+    .filter(
+      (item) => item.product.name !== undefined && item.product.checkHotProduct
+    )
     .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
 
   return (
@@ -184,11 +186,13 @@ const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
       <div>
         <div className="inner-banner-area">
           <div className="container">
-            <div className="row align-items-center" style={{paddingBottom:30}}>
+            <div
+              className="row align-items-center"
+              style={{ paddingBottom: 30 }}
+            >
               <div className="col-lg-5 col-md-5">
                 <div className="inner-content">
-                  <h2>
-                    Sản phẩm HOT</h2>
+                  <h2>Sản phẩm HOT</h2>
                   <ul>
                     <li>
                       <Link to="/">
@@ -202,7 +206,7 @@ const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
               <div className="col-lg-7 col-md-7">
                 <div className="inner-img">
                   <img
-                      style={{maxWidth:450}}
+                    style={{ maxWidth: 450 }}
                     src="assets/images/offer-img/png5.png"
                     alt="Images"
                   />
@@ -217,13 +221,13 @@ const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
               <div className="row">
                 <div className="col-lg-4 col-md-4">
                   <div className="product-topper-title">
-                    <h3 className='hot_text'>
+                    <h3 className="hot_text">
                       <NavLink
-                          activeClassName="active"
-                          to="/hot_product"
-                          className="nav-link"
+                        activeClassName="active"
+                        to="/hot_product"
+                        className="nav-link"
                       >
-                        <i class='bx bxs-hot'></i>
+                        <i class="bx bxs-hot"></i>
                         Tất cả sản phẩm HOT
                       </NavLink>
                     </h3>
@@ -231,11 +235,17 @@ const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
                 </div>
                 <div className="col-lg-4 col-md-4">
                   <div className="nav-bottom-form-area">
-                    <div className="nav-bottom-form" >
-                      <input type="text" className="form-control" value={search} onChange={(e)=>{
-                        setSearch(e.target.value);
-                        handleFilterByName(e);
-                      }} placeholder="Nhập tên sản phẩm bạn muốn tìm"/>
+                    <div className="nav-bottom-form">
+                      <input
+                        type="text"
+                        className="form-control"
+                        value={search}
+                        onChange={(e) => {
+                          setSearch(e.target.value);
+                          handleFilterByName(e);
+                        }}
+                        placeholder="Nhập tên sản phẩm bạn muốn tìm"
+                      />
                     </div>
                   </div>
                 </div>
@@ -268,17 +278,25 @@ const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
                           <div className="product-img">
                             <Link to={`/detail-products/${item.product.id}`}>
                               <img
-                                src={process.env.REACT_APP_HOST +`/uploads/${item.image}`}
+                                src={
+                                  process.env.REACT_APP_HOST +
+                                  `/uploads/${item.image}`
+                                }
                                 alt="Product Images"
                               />
                             </Link>
                             <div className="hot-icon">
-                              <img src="assets/images/hot_icon.png" alt=""/>
+                              <img src="assets/images/hot_icon.png" alt="" />
                             </div>
-                            {item.product.priceSale >0 && (
+                            {item.product.priceSale > 0 && (
                               <div className="product-item-tag">
                                 <h3>
-                                  {(100 - (item.product.priceSale * 100 / item.product.price )).toFixed(0)}%
+                                  {(
+                                    100 -
+                                    (item.product.priceSale * 100) /
+                                      item.product.price
+                                  ).toFixed(0)}
+                                  %
                                 </h3>
                               </div>
                             )}
@@ -291,10 +309,7 @@ const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
                                 </Link>
                               </li>
                               <li>
-                                <a
-
-                                  onClick={() => handleAddToCart(item)}
-                                >
+                                <a onClick={() => handleAddToCart(item)}>
                                   <i className="bx bx-cart" />
                                 </a>
                               </li>
@@ -307,18 +322,19 @@ const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
                               </Link>
                             </h3>
                             <span>
-
-                                {item.product.priceSale > 0 ? (
-                                    <div>
-                                      <div>{fCurrency(item.product.priceSale)} /{" "}
-                                        {item.product.dvt} / {item.product.weight}{" "}</div>
-                                    </div>
-                                ) : (
-                                    <>
-                                      {fCurrency(item.product.price)} /{" "}
-                                      {item.product.dvt} / {item.product.weight}{" "}
-                                    </>
-                                )}
+                              {item.product.priceSale > 0 ? (
+                                <div>
+                                  <div>
+                                    {fCurrency(item.product.priceSale)} /{" "}
+                                    {item.product.dvt} / {item.product.weight}{" "}
+                                  </div>
+                                </div>
+                              ) : (
+                                <>
+                                  {fCurrency(item.product.price)} /{" "}
+                                  {item.product.dvt} / {item.product.weight}{" "}
+                                </>
+                              )}
                             </span>
                           </div>
                         </div>
@@ -328,20 +344,20 @@ const HotProduct = ({ listProducts, getAllProduct, getToTalCart }) => {
                 })
               ) : (
                 <center>
-                  <img src="/assets/images/found.gif" height="200px" alt=""/>
-                  <h2 >Oh! Không tìm thấy sản phẩm nào...</h2>
+                  <img src="/assets/images/found.gif" height="200px" alt="" />
+                  <h2>Oh! Không tìm thấy sản phẩm nào...</h2>
                 </center>
               )}
               <div className="col-lg-12 col-md-12 text-end">
-                  <TablePagination
-                      rowsPerPageOptions={[20, 36, 44]}
-                      component="div"
-                      count={products.length}
-                      rowsPerPage={rowsPerPage}
-                      page={page}
-                      onPageChange={handleChangePage}
-                      onRowsPerPageChange={handleChangeRowsPerPage}
-                  />
+                <TablePagination
+                  rowsPerPageOptions={[20, 36, 44]}
+                  component="div"
+                  count={products.length}
+                  rowsPerPage={rowsPerPage}
+                  page={page}
+                  onPageChange={handleChangePage}
+                  onRowsPerPageChange={handleChangeRowsPerPage}
+                />
               </div>
             </div>
           </div>

@@ -25,7 +25,7 @@ const Contact = () => {
                             </div>
                             <div className="col-lg-7 col-md-8">
                                 <div className="inner-img">
-                                    <img src="assets/images/inner-banner/inner-banner2.png" alt="Images"/>
+                                    <img src="assets/images/inner-banner/inner-banner11.png" alt="Images"/>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +83,9 @@ const Contact = () => {
                                     <p>CH4: Đường nội thị 2 (cổng chợ chiều) Thị trấn Vương, Tiên Lữ, Hưng Yên </p>
                                     <a href="https://goo.gl/maps/1BadNa6wpq32v9VTA">
                                         <p>CH5: Số 192 Phan Đình Phùng, TP Thái Nguyên </p>
-                                    </a>                                </div>
+                                    </a>
+                                    <p>CH6: Kiot 16 Toà Nam, Rice City Linh Đàm, Hoàng Liệt, Hoàng Mai, HN</p>
+                                </div>
                             </div>
                         </div>
                     </div>

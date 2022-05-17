@@ -31,7 +31,7 @@ const Offer = () => {
               <img src="assets/images/offer-img/png2.png" alt="Images" />
               <div className="line" />
               <h3>Đặc sản chất lượng</h3>
-              <Link to="/products" className="shop-btn">Khám phá ngay</Link>
+              <Link to="/hot_product" className="shop-btn">Khám phá ngay</Link>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ const Offer = () => {
         <div className="offer-style-item-4">
           <div className="line" />
           <h3>Trải khắp 63 tỉnh thành</h3>
-          <Link to="/products" className="shop-btn">Mua ngay</Link>
+          <Link to="/contact" className="shop-btn">Khám phá ngay</Link>
           <img src="assets/images/offer-img/bandovn.png" alt="Images" />
         </div>
       </div>
